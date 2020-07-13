@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Date and time</title>
+</head>
+<body>
+   
+<script>
+	let date = new Date();
+
+var bag = (date.getDay());
+if(bag ==0)
+{
+    alert("Sunday");
+}
+else if(bag == 1)
+{alert("Monday");
+}
+else if(bag == 2)
+{alert("Tuesday");
+}
+else if(bag == 3)
+{alert("Wednesday");
+}
+else if(bag ==4)
+{alert("Thursday");
+}
+else if(bag == 5)
+{alert("Friday");
+}
+else if(bag == 6)
+{alert("Saturday");
+}
+
+
+var time = new Date();
+alert(
+    time.toLocaleString('en-US', { hour: 'numeric', hour12: true , minute: 'numeric', second: 'numeric'   })
+  );
+
+</script>
+</body>
+</html> 
